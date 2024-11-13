@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
+ }
+ .orbit{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    animation-name: solar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+ }
+ .planet{
+    border: 2px solid green;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    top: 36px;
+ }
+ .sun{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 600px;
+    top: 250px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left,orange,red);
+ }
+ @keyframes solar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: ;
+    }
+ }
+</style>
+<body>
+    <div class="container">
+        <div class="orbit">
+            <div class="planet">
+                <div class="sun"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

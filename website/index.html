@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+            background-color: black;
+            color: white; 
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: white;
+        }
+        
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a:hover{
+            font-size: 1.01rem;
+            color: rgb(52, 6, 125);
+        }
+        .bt{
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+        }
+        .left{
+            font-size: larger;
+            font-size: 2rem;
+            color: black;
+        }
+        .firstsection{
+            display: flex;
+            /* justify-content: space-around; */
+            margin: 30px 0;
+            align-items: center;
+
+
+        }
+        .firstsection > div{
+            width: 30%;
+            
+            
+        }
+        .leftsection{
+           font-size: 3rem;
+            width: 34px;
+            height: 20px;
+            padding-top: 0%;
+
+        }
+        .rightsection{
+            
+            margin: 30px;
+            width: 34px;
+            height: 20px;
+        }
+        img{
+            height: 600px;
+            width: 500px;
+
+        }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">Medium</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">our story</a></li>
+                    <li><a href="/">membership</a></li>
+                    <li><a href="/">write</a></li>
+                    <li><a href="/">sign in</a></li>
+                    <li><a href="/"><button class="bt">get start</button> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Human 
+                <div>Stories & ideas</div>
+            </div>
+            <div class="rightsection"></div>
+                <img src="cap_snap.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
